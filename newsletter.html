@@ -2,11 +2,81 @@
 <html>
 <head>
 	<title>Kong Newsletter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<style type="text/css">
-		
+		body {
+			background-color: #eee;
+			font-family: 'Helvetica', sans-serif;
+		}
+
+		table.responsive-table {
+			background-color: #fff !important;
+		}
+
+		@media screen and (max-width: 600px) {
+			
+			table.responsive-table {
+				width: 100%;
+			}
+
+			td.logo > div {
+				display: inline-block !important;
+			}
+
+			img.responsive-image {
+				max-width: 100% !important;
+				height: auto !important;
+			}
+		}
 	</style>
 </head>
 <body>
+
+	<!-- FULL WIDTH CONTAINER -->
+	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td align="center">
+				
+				<!-- 600px CONTAINER -->
+				<table width="600" cellspacing="0" cellpadding="0" border="0" class="responsive-table">
+					<tr>
+						<td>
+							<table width="300" align="left" style="margin-top: 20px;">
+								<tr>
+									<td style="padding: 15px;">
+										<img height="40" src="https://getkong.org/assets/images/kong-blue.png" class="responsive-image">
+									</td>
+								</tr>
+							</table>
+
+							<table width="300" align="right" style="margin-top: 20px;">
+								<tr>
+									<td style="text-align: right; padding: 15px;">
+										<p>{{date}}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h1 style="padding: 15px; color: #062f4d">{{headline}}</h1>
+							<img width="600" src="https://konghq.com/wp-content/uploads/2017/10/kong-cover@2x-1.png" class="responsive-image">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p style="padding: 15px;">{{copy}}</p>
+							<a href="#" style="text-decoration: none; padding: 15px; color: #17a956">Continue reading...</a>
+						</td>
+					</tr>
+				</table>
+
+			</td>
+		</tr>		
+	</table>
 
 </body>
 </html>
