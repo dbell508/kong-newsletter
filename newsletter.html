@@ -36,17 +36,36 @@
 				width: 100%;
 			}
 
-
-
-			td.logo > div {
-				display: inline-block !important;
-			}
-
 			img.responsive-image {
 				max-width: 100% !important;
 				height: auto !important;
 			}
+
+			table.logo-table,
+			table.date-table {
+				width: 150px !important;
+				padding: 0 !important;
+			}
+
+			table.list-icon-table {
+				width: 30% !important;
+			}
+
+			table.list-item-table {
+				width: 70% !important;
+			}
+
+			ul > li {
+				padding: 0 5px;
+			}
+
+			ul > li > a {
+				font-size: 12px;
+			}
+
 		}
+
+
 	</style>
 </head>
 <body>
@@ -60,7 +79,7 @@
 				<table width="600" cellspacing="0" cellpadding="0" border="0" class="responsive-table">
 					<tr>
 						<td>
-							<table width="300" align="left" style="margin-top: 20px;">
+							<table width="300" align="left" style="margin-top: 20px;" class="logo-table responsive-table">
 								<tr>
 									<td style="padding: 25px;">
 										<img height="40" src="https://getkong.org/assets/images/kong-blue.png" class="responsive-image">
@@ -68,7 +87,7 @@
 								</tr>
 							</table>
 
-							<table width="300" align="right" style="margin-top: 20px;">
+							<table width="300" align="right" style="margin-top: 20px;" class="date-table responsive-table">
 								<tr>
 									<td style="text-align: right; padding: 25px; color: #9c9c9c">
 										<p>{{date}}</p>
@@ -95,14 +114,14 @@
 				<table width="600" cellspacing="0" cellpadding="0" border="0" class="responsive-table" style="margin-top: 25px;">
 					<tr>
 						<td align="center" style="padding: 50px;">
-							<img width="450" src="https://www.xlsoft.com/jp/products/kong/images/building.svg">
+							<img width="450" src="https://www.xlsoft.com/jp/products/kong/images/building.svg" class="responsive-image">
 							<h1 style="color: #062f4d; font-weight: lighter;">Introducing Kong Enterprise</h1>
 							<h3 style="font-weight: lighter;">{{subheading}}</h1>
 						</td>
 					</tr>
 					<tr>
 						<td align="center" style="padding-bottom: 60px;">
-							<a href="#" style="padding: 20px 189px; background-color: #17a956; text-decoration: none; color: #fff; border-radius: 5px;" class="readBtn">Continue reading</a>
+							<a href="#" style="padding: 20px 25%; background-color: #17a956; text-decoration: none; color: #fff; border-radius: 5px;" class="readBtn">Continue reading</a>
 						</td>
 					</tr>
 				</table>
@@ -111,7 +130,7 @@
 				<table width="600" cellspacing="0" cellpadding="0" border="0" class="responsive-table" style="margin-top: 25px;">
 					<tr>
 						<td align="center" style="padding: 50px 50px 0 50px;">
-							<img width="450" src="https://konghq.com/wp-content/uploads/2017/08/assembly-line.svg" style="border-radius: 50%; overflow: hidden;">
+							<img width="450" src="https://konghq.com/wp-content/uploads/2017/08/assembly-line.svg" style="border-radius: 50%; overflow: hidden;" class="responsive-image">
 						</td>
 					</tr>
 					<tr>
@@ -137,7 +156,7 @@
 					<tr>
 						<td style="padding: 0 25px 25px;">
 							
-							<table width="150" style="border-top: 1px solid #ddd" align="left">
+							<table width="150" style="border-top: 1px solid #ddd" align="left" class="responsive-table list-icon-table">
 								<tr>
 									<td style="padding: 20px 0;">
 										<img src="https://2tjosk2rxzc21medji3nfn1g-wpengine.netdna-ssl.com/wp-content/themes/konghq/assets/img/icons/icn-webinars.svg">
@@ -145,7 +164,7 @@
 								</tr>
 							</table>
 
-							<table width="400" style="border-top: 1px solid #ddd" align="right">
+							<table width="400" style="border-top: 1px solid #ddd" align="right" class="responsive-table list-item-table">
 								<tr>
 									<td>
 										<h4 class="list-title" style="color: #17a956; margin-bottom: 0;">{{list-item-title}}</h4>
@@ -160,7 +179,7 @@
 					<tr>
 						<td style="padding: 0 25px 25px;">
 							
-							<table width="150" style="border-top: 1px solid #ddd" align="left">
+							<table width="150" style="border-top: 1px solid #ddd" align="left" class="responsive-table list-icon-table">
 								<tr>
 									<td style="padding: 20px 0;">
 										<img src="https://2tjosk2rxzc21medji3nfn1g-wpengine.netdna-ssl.com/wp-content/themes/konghq/assets/img/icons/icn-webinars.svg">
@@ -168,7 +187,7 @@
 								</tr>
 							</table>
 
-							<table width="400" style="border-top: 1px solid #ddd" align="right">
+							<table width="400" style="border-top: 1px solid #ddd" align="right" class="responsive-table list-item-table">
 								<tr>
 									<td>
 										<h4 class="list-title" style="color: #17a956; margin-bottom: 0;">{{list-item-title}}</h4>
@@ -206,20 +225,12 @@
 					</tr>
 					<tr style="text-align: center; margin-bottom: 25px;">
 						<td>
-							<p style="color: #999; margin-bottom: 5px;"><span style="font-weight: bold">Kong Inc.</span> 251 Post Street, 2nd Floor, San Francisco, CA 94108</p>
-							<a href="#" style="color: #999;">Unsubscribe</a>
+							<p style="color: #999; margin-bottom: 5px; font-size: 12px"><span style="font-weight: bold">Kong Inc.</span> 251 Post Street, 2nd Floor, San Francisco, CA 94108</p>
+							<a href="#" style="color: #999; font-size: 12px">Unsubscribe</a>
 						</td>
 					</tr>
 				</table>
-
-
-
-
 			</td>
-		</tr>
-
-		<tr>
-			
 		</tr>
 	</table>
 
