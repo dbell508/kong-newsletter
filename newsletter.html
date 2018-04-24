@@ -15,11 +15,28 @@
 			background-color: #fff !important;
 		}
 
+		table#footer {
+			background-color: #eee !important;
+		}
+
+		ul > li {
+			display: inline-block !important;
+			padding: 0 10px;
+		}
+
+		ul > li > a {
+			color: #aab4bb;
+			text-decoration: none;
+		}
+
 		@media screen and (max-width: 600px) {
 			
-			table.responsive-table {
+			table.responsive-table,
+			table.footer-table {
 				width: 100%;
 			}
+
+
 
 			td.logo > div {
 				display: inline-block !important;
@@ -39,7 +56,7 @@
 		<tr>
 			<td align="center">
 				
-				<!-- 600px CONTAINER -->
+				<!-- 600px CONTAINER - 1st BLOCK-->
 				<table width="600" cellspacing="0" cellpadding="0" border="0" class="responsive-table">
 					<tr>
 						<td>
@@ -74,6 +91,7 @@
 					</tr>
 				</table>
 
+				<!-- 2nd BLOCK -->
 				<table width="600" cellspacing="0" cellpadding="0" border="0" class="responsive-table" style="margin-top: 25px;">
 					<tr>
 						<td align="center" style="padding: 50px;">
@@ -89,6 +107,7 @@
 					</tr>
 				</table>
 
+				<!-- 3rd BLOCK -->
 				<table width="600" cellspacing="0" cellpadding="0" border="0" class="responsive-table" style="margin-top: 25px;">
 					<tr>
 						<td align="center" style="padding: 50px 50px 0 50px;">
@@ -101,13 +120,107 @@
 							<p style="padding: 0 25px 25px 25px;">{{copy}}</p>
 						</td>
 					</tr>
+					<tr>
+						<td style="padding-bottom: 25px;">
+							<a href="#" style="text-decoration: none; padding: 25px; color: #17a956;">Continue reading...</a>
+						</td>
+					</tr>
+				</table>
+
+				<!-- 4th BLOCK -->
+				<table width="600" cellspacing="0" cellpadding="0" border="0" class="responsive-table" style="margin-top: 25px;">
+					<tr>
+						<td>
+							<h2 style="padding: 20px 25px; color: #062f4d;">See Kong Upcoming Live Webinars</h2>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 0 25px 25px;">
+							
+							<table width="150" style="border-top: 1px solid #ddd" align="left">
+								<tr>
+									<td style="padding: 20px 0;">
+										<img src="https://2tjosk2rxzc21medji3nfn1g-wpengine.netdna-ssl.com/wp-content/themes/konghq/assets/img/icons/icn-webinars.svg">
+									</td>
+								</tr>
+							</table>
+
+							<table width="400" style="border-top: 1px solid #ddd" align="right">
+								<tr>
+									<td>
+										<h4 class="list-title" style="color: #17a956; margin-bottom: 0;">{{list-item-title}}</h4>
+										<p style="font-size: 12px;">{{date}}</p>
+										<p>{{copy}}</p>
+									</td>
+								</tr>
+							</table>
+							
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 0 25px 25px;">
+							
+							<table width="150" style="border-top: 1px solid #ddd" align="left">
+								<tr>
+									<td style="padding: 20px 0;">
+										<img src="https://2tjosk2rxzc21medji3nfn1g-wpengine.netdna-ssl.com/wp-content/themes/konghq/assets/img/icons/icn-webinars.svg">
+									</td>
+								</tr>
+							</table>
+
+							<table width="400" style="border-top: 1px solid #ddd" align="right">
+								<tr>
+									<td>
+										<h4 class="list-title" style="color: #17a956; margin-bottom: 0;">{{list-item-title}}</h4>
+										<p style="font-size: 12px;">{{date}}</p>
+										<p>{{copy}}</p>
+									</td>
+								</tr>
+							</table>
+							
+						</td>
+					</tr>
+				</table>
+
+				<!-- 5th BLOCK -->
+				<table width="600" cellspacing="0" cellpadding="0" border="0" class="responsive-table" style="margin-top: 25px;" id="footer">
+					<tr>
+						<td style="padding-bottom: 25px;">
+							<p style="line-height: 20px; font-size: 15px;">As always, you are invited to contribute to the Kong project by opening issues, submitting pull requests, and chatting with the core maintainers and the Kong community.</p>
+							<p style="line-height: 20px; font-size: 15px;">Cheers, <br>
+							–– The Kong Team</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-top: 1px solid #ccc; padding: 25px 0 0;"></td>
+					</tr>
+					<tr style="text-align: center;">
+						<td>
+							<ul style="padding: 0;">
+								<li><a href="#">{{facebook-link}}</a></li>
+								<li><a href="#">{{twitter-link}}</a></li>
+								<li><a href="#">{{social-link}}</a></li>
+								<li><a href="#">{{github-link}}</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr style="text-align: center; margin-bottom: 25px;">
+						<td>
+							<p style="color: #999; margin-bottom: 5px;"><span style="font-weight: bold">Kong Inc.</span> 251 Post Street, 2nd Floor, San Francisco, CA 94108</p>
+							<a href="#" style="color: #999;">Unsubscribe</a>
+						</td>
+					</tr>
 				</table>
 
 
-				
+
 
 			</td>
-		</tr>		
+		</tr>
+
+		<tr>
+			
+		</tr>
 	</table>
 
 </body>
